@@ -1,12 +1,13 @@
-const {
+'use strict';
+import {
   addBookHandler,
   getAllBooksHandler,
   getBookByIdHandler,
   editBookByIdHandler,
   deleteBookByIdhandler,
-} = require('./handler');
+} from './handler.js';
 
-const routes = [
+export const routes = [
   {
     method: 'POST',
     path: '/books',
@@ -33,5 +34,3 @@ const routes = [
     handler: deleteBookByIdhandler,
   },
 ];
-
-module.exports = routes;
