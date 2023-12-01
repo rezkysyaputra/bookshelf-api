@@ -1,10 +1,10 @@
 import {
   addBookHandler,
+  deleteBookByIdhandler,
+  editBookByIdHandler,
   getAllBooksHandler,
   getBookByIdHandler,
-  editBookByIdHandler,
-  deleteBookByIdhandler,
-} from '../controller/handler.js';
+} from '../controllers/mainControllers.js';
 
 export const routes = [
   {
